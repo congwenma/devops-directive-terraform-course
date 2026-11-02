@@ -1,4 +1,8 @@
 #!/bin/bash
+# fail fast on errors, undefined variables, and pipeline failures
+# -e → exit immediately on a non-zero exit status
+# -u → exit on unset variables
+# -o pipefail → exit if any part of a pipeline fails
 set -euo pipefail
 
 # Change directory to example
